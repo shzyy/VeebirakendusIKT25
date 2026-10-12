@@ -1,87 +1,108 @@
-<!DOCTYPE html> <!--deklareerime HTMLS keel-->
+<!DOCTYPE html>
 <html lang="et">
 <head>
-    <!--veebilehe tehnilene info-->
     <meta charset="UTF-8">
-    <title>Evgeni veebirakenduste aluste tööd</title>
+    <title>Timoha - Meedia</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<!--veebilehe sisu-->
-<!--päis-->
+
 <header>
-    <h1>
-        Evgeni veebirakenduste aluste tööd
-    </h1>
+    <h1>Timoha</h1>
 </header>
-<!--nävigeerimismenüü-->
+
 <nav>
     <ul>
-        <li>
-            <a href="index.html">Avaleht</a>
+        <li><a href="index.html">Kodu</a>
         </li>
-        <li>
-            <a href="tutvustus.html">Tutvustus</a>
+        <li><a href="tutvustus.html">Tutvustus</a></li>
+
+        <li><a href="lingid.html">Kasulikud lingid</a></li>
+        <li><a href="tood.html">Tehtud tööd</a>
         </li>
-        <li>
-            <a href="lingid.html">Lingid</a>
-        </li>
-        <li>
-            <a href="tood.html">Tehtud tööd</a>
-        </li>
-        <li>
-            <a href="meedia.html">Meedia</a>
-        </li>
+        <li><a href="meedia.html">Meedia</a></li>
     </ul>
 </nav>
-<!--põhisisu-->
+
 <main>
-    <section id="pildigalerii">
-        <img src="https://fastly.picsum.photos/id/987/300/300.jpg?hmac=CL-U9z0TBiCphrNbRUFhFft9TkMq7Brh17HWTbdYNfc">
-        <img src="https://fastly.picsum.photos/id/172/300/300.jpg?hmac=nuuUsL0OJXl8yefCpYU69h50nFMES3AEAQSBQ57RCQc">
-        <img src="https://fastly.picsum.photos/id/1000/300/300.jpg?hmac=hOLpfG7OPjGNZ-JDFwC1QZ2GK_0zZYRyvlJA5BF0SVg">
-        <img src="https://fastly.picsum.photos/id/175/300/300.jpg?hmac=vC3FhlD3cqzNijD5Bt9mBvZCzA6MSj3QsQNrIBv1uSo">
-        <img src="https://fastly.picsum.photos/id/1066/300/300.jpg?hmac=eonqNAWz0DG9-sRJb4kXEGpQOP46VTV14QzSb_9CBkY">
-        <img src="https://fastly.picsum.photos/id/719/300/300.jpg?hmac=LumeKhy-hJsLsniO_ajSrRJJxeRzqg7tXAdxZ6hOE_c">
+    <div id="suurkast">
 
-    </section>
+        <section id="pildigalerii">
+            <h2>Pildigalerii</h2>
 
-    <section id="video">
-        <h2>Video</h2>
+            <img src="https://picsum.photos/300/300?random=1"
+                 alt="pilt 1"
+                 width="300"
+                 height="300"
+                 loading="lazy">
 
-        <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/5QZcOugHQ6s"
-                title="YouTube video"
-                allowfullscreen>
-        </iframe>
-    </section>
+            <img src="https://picsum.photos/300/300?random=2"
+                 alt="pilt 2"
+                 width="300"
+                 height="300"
+                 loading="lazy">
 
-    <section id="kaart">
-        <h2>Kaart</h2>
+            <img src="https://picsum.photos/300/300?random=3"
+                 alt="pilt 3"
+                 width="300"
+                 height="300"
+                 loading="lazy">
 
-        <iframe
-                src="https://www.google.com/maps?q=Tallinna+Tööstushariduskeskus&output=embed"
-                width="600"
-                height="450"
-                title="Google Maps kaart">
-        </iframe>
-    </section>
+            <img src="https://picsum.photos/300/300?random=4"
+                 alt="pilt 4"
+                 width="300"
+                 height="300"
+                 loading="lazy">
 
-    <section id="muusika">
-        <h2>Muusika</h2>
+            <img src="https://picsum.photos/300/300?random=5"
+                 alt="pilt 5"
+                 width="300"
+                 height="300"
+                 loading="lazy">
 
-        <iframe
-                src="https://open.spotify.com/embed/track/6MtUSSf9h4s2lKkkkXdu5J"
-                width="100%"
-                height="352"
-                title="Spotify muusika"
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
-        </iframe>
-    </section>
+            <img src="https://picsum.photos/300/300?random=6"
+                 alt="pilt 6"
+                 width="300"
+                 height="300"
+                 loading="lazy">
+        </section>
+
+        <section id="video">
+            <h2>Video</h2>
+
+            <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/OMN1U3bdjUM"
+                    title="Video">
+            </iframe>
+        </section>
+
+        <section id="kaart">
+            <h2>Kaart</h2>
+
+            <iframe
+                    src="https://www.google.com/maps?q=Tallinn,Estonia&output=embed"
+                    width="600"
+                    height="450"
+                    style="border:0;">
+            </iframe>
+        </section>
+
+        <section id="muusika">
+            <h2>Muusika</h2>
+
+            <iframe
+                    src="https://open.spotify.com/embed/track/3JdLb8ixDa67E3zKZaxo6N"
+                    width="100%"
+                    height="352">
+            </iframe>
+        </section>
+
+    </div>
 </main>
-<!--jalus-->
+
 <footer>
     Evgeni leht &copy; 2026
 </footer>
